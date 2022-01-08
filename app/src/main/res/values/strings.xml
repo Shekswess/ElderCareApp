@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ElderCare</string>
+    <string name="title_activity_google_map">GoogleMap</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_setting_location">SettingLocation</string>
+    
+    <string-array name="activities">
+        <item>Walking</item>
+        <item>Cooking</item>
+        <item>Shopping</item>
+    </string-array>
+</resources>
