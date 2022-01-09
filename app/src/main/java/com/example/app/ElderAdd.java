@@ -71,6 +71,7 @@ public class ElderAdd extends AppCompatActivity implements View.OnClickListener{
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -96,10 +97,11 @@ public class ElderAdd extends AppCompatActivity implements View.OnClickListener{
         editDate = (EditText) findViewById(R.id.date);
 
 
+
         Calendar calendar = Calendar.getInstance();
         final int year = calendar.get(Calendar.YEAR);
         final int month = calendar.get(Calendar.MONTH);
-        final int day = calendar.get(Calendar.DAY_OF_MONTH);
+        final int dayy = calendar.get(Calendar.DAY_OF_MONTH);
 
         editDate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -108,10 +110,10 @@ public class ElderAdd extends AppCompatActivity implements View.OnClickListener{
                     @Override
                     public void onDateSet(DatePicker datePicker, int year, int month, int dayOfMonth) {
                         month = month + 1;
-                        String date = day+"/"+month+"/"+year;
+                        String date = dayOfMonth+"/"+month+"/"+year;
                         editDate.setText(date);
                     }
-                },year,month,day);
+                },year,month,dayy);
                 datePickerDialog.show();
             }
         });

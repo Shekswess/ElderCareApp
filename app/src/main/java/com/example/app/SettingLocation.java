@@ -74,7 +74,7 @@ public class SettingLocation extends FragmentActivity implements OnMapReadyCallb
                 userLatLong = new LatLng(location.getLatitude(), location.getLongitude());
                 mMap.clear();
                 mMap.addMarker(new MarkerOptions().position(userLatLong).title("Current location!"));
-                mMap.moveCamera(CameraUpdateFactory.newLatLng(userLatLong));
+                //mMap.moveCamera(CameraUpdateFactory.newLatLng(userLatLong));
             }
         };
 

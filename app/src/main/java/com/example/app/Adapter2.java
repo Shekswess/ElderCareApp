@@ -215,6 +215,7 @@ public class Adapter2 extends FirebaseRecyclerAdapter<Activity,Adapter2.myViewHo
                         Map<String,Object> map1 = new HashMap<>();
                         Map<String,Object> map2 = new HashMap<>();
                         map1.put("reportEld", reportEld);
+                        map1.put("ratingVol", rating);
                         map2.put("rating", rating);
                         FirebaseDatabase.getInstance().getReference().child("Activities")
                                 .child(getRef(position).getKey()).updateChildren(map1).addOnSuccessListener(new OnSuccessListener<Void>() {
